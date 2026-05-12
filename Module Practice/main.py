@@ -25,4 +25,4 @@ print(poppy)
 print(stringJoin('', (str(num) for num in lst)))
 
 #dictionary work
-print(dictGet(dicty, key1))
+print(dictGet(dicty, 'key1'))
