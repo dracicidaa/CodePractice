@@ -18,8 +18,8 @@ print(newStringy)
 print(listCount(lst, 13))   #1
 lst = listAdd(lst, 50)
 print(lst)
-lst = listPop(lst, 3)   #85 should be missing
-print(lst)
+poppy = listPop(lst, 3)   #85 should be missing
+print(poppy)
 
 #string join
 print(stringJoin('', lst))
