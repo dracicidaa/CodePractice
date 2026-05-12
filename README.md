@@ -1,2 +1,3 @@
 # CodePractice
-Code practice I am doing during my python course
+Code practice I am doing during my python course  
+I have figured out how to properly make Python Packages!  
