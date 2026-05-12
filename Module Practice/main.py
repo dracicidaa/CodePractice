@@ -16,7 +16,7 @@ print(newStringy)
 
 #list work
 print(listCount(lst, 13))   #1
-lst = listAdd(lst, newStringy)
+lst = listAdd(lst, 50)
 print(lst)
 lst = listPop(lst, 3)   #85 should be missing
 print(lst)
