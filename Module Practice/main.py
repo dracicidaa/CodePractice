@@ -22,7 +22,7 @@ poppy = listPop(lst, 3)   #85 should be missing
 print(poppy)
 
 #string join
-print(stringJoin('', lst))
+print(stringJoin('', (str(num) for num in lst)))
 
 #dictionary work
 print(dictGet(dicty, key1))
