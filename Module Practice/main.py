@@ -23,3 +23,6 @@ print(lst)
 
 #string join
 print(stringJoin('', lst))
+
+#dictionary work
+print(dictGet(dicty, key1))
