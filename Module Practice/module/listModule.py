@@ -6,8 +6,8 @@
 def listAdd(list, element):
    # if not list or element:
        # return None
-    intelist = list.append(element)
-    return intelist
+    list.append(element)
+    return list
 
 #list pop 'function'
 def listPop(list, index):
