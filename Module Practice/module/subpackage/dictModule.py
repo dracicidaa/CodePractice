@@ -3,14 +3,14 @@
 
 #dictionary get 'function'
 def dictGet(dict, key):
-    if not dict or key:
-        return None
+   # if not dict or key:
+    #    return None
     
     return dict.get(key)
 
 #dictionary pop 'function'
 def dictPop(dict, key):
-    if not dict or key:
-        return None
+    #if not dict or key:
+     #   return None
     
     return dict.pop(key)

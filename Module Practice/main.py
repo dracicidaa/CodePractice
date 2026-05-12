@@ -1,5 +1,5 @@
 #import stuff
-from .module import dictGet, dictPop, setAdd, setComp, listAdd, listPop, listCount, listIndex, stringSplit, stringJoin, stringFind, stringStart
+from module import dictGet, dictPop, setAdd, setComp, listAdd, listPop, listCount, listIndex, stringSplit, stringJoin, stringFind, stringStart
 
 #time to go through all of the functions and see if I packaged everything correctly
 

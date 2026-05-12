@@ -3,14 +3,14 @@
 
 #set add 'function'
 def setAdd(set, item):
-    if not set or item:
-        return None
+   # if not set or item:
+       # return None
     
     return set.add(item)
 
 #set difference 'function'
 def setComp(set, otherSet):
-    if not set or otherSet:
-        return None
+   # if not set or otherSet:
+      #  return None
     
     return set.difference(otherSet)
