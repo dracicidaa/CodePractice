@@ -1,4 +1,5 @@
 #Pactice using lists, mulilines, etc to make an "LED" board
+#I have no idea how to neatly print multilines rightnext to each other lol
 
 #define stuff
 led_states = ['''
@@ -6,62 +7,52 @@ led_states = ['''
 # #
 # #
 # #
-###
-''','''
+###''','''
 #
 #
 #
 #
-#
-''','''
+#''','''
 ###
   #
 ###
 #
-###
-''','''
-###
-  #
+###''','''
 ###
   #
 ###
-''','''
+  #
+###''','''
 # #
 # #
 ###
   #
-  #
-  ''','''
+  #''','''
 ###
 #
 ###
   #
-###
-''','''
+###''','''
 ###
 #
 ###
 # #
+###''','''
 ###
-''','''
-###
   #
   #
   #
-  #
-''','''
+  #''','''
 ###
 # #
 ###
 # #
-###
-''','''
+###''','''
 ###
 # #
 ###
   #
-###
-'''  
+###'''  
 ]
 num0 = led_states[0]
 num1 = led_states[1]
@@ -78,7 +69,7 @@ running = True
 
 #Main program body
 while running:
-    selection - input('Please enter a number, or any negative number to exit program: ')
+    selection = input('\nPlease enter a number, or any negative number to exit program: ')
     try:
         if int(selection) >= 0:
             for i in selection:
