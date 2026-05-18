@@ -67,3 +67,29 @@ class cipher:
             
         return intext
 
+
+
+
+
+#Program declarations
+ceaser = cipher()
+running = True
+inptext = ''
+inpcipher = ''
+inpshift = 0
+status = 0
+
+while running:
+    status = int(input('Please make as selection: 1 for encode, 2 for decode, -1 to exit'))
+    if status == 1:
+        try:
+            inptext = input('Please enter a string of text to encode: ')
+        except Exception:
+            print("Error, please enter in a string of characters. Restarting program")
+            continue
+        try:
+            inpshift = int(input('Please enter a number (1 - 25) that you would like as a shift: '))
+        except Exception:
+            print("Error, please enter an integer between 1 and 25. Restarting program")
+            continue
+        print('Here is your output: ', ceaser.encode(inptext, inpshift))
