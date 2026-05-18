@@ -11,17 +11,17 @@ class cipher:
         temp = 0
         for char in self.text:
             if char.isalnum():
-                if char.isupper():
-                    temp = ord(char) + self.shift
-                    if temp > ord('Z'):
-                        temp = ord('A')
-                    intext += chr(temp)
-                    temp = 0
-                    continue
-                elif char.islower():
+                if char.islower():
                     temp = ord(char) + self.shift
                     if temp > ord('z'):
                         temp = ord('a')
+                    intext += chr(temp)
+                    temp = 0
+                    continue
+                elif char.isupper():
+                    temp = ord(char) + self.shift
+                    if temp > ord('Z'):
+                        temp = ord('A')
                     intext += chr(temp)
                     temp = 0
                     continue
@@ -44,17 +44,17 @@ class cipher:
 
         for char in text:
             if char.isalnum():
-                if char.isupper():
-                    temp = ord(char) - self.shift
-                    if temp < ord('A'):
-                        temp = ord('Z')
-                    intext += chr(temp)
-                    temp = 0
-                    continue
-                elif char.islower():
+               if char.islower():
                     temp = ord(char) - self.shift
                     if temp < ord('a'):
                         temp = ord('z')
+                    intext += chr(temp)
+                    temp = 0
+                    continue
+                elif char.isupper():
+                    temp = ord(char) - self.shift
+                    if temp < ord('A'):
+                        temp = ord('Z')
                     intext += chr(temp)
                     temp = 0
                     continue
