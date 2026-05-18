@@ -84,7 +84,7 @@ inpshift = 0
 status = 0
 
 while running:
-    status = int(input('Please make as selection: 1 for encode, 2 for decode, -1 to exit'))
+    status = int(input('Please make as selection: 1 for encode, 2 for decode, -1 to exit: '))
     if status == 1:
         try:
             inptext = input('Please enter a string of text to encode: ')
