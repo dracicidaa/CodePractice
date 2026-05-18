@@ -7,19 +7,21 @@ class cipher:
             raise TypeError("Inputed text must be a string!")
         if shift < 1 or shift > 25:
             raise ValueError("Shift must be between 1 and 25 to correctly work!")
+        self.text = text
+        self.shift = shift
         intext = ''
         temp = 0
-        for char in self.text:
+        for char in text:
             if char.isalnum():
                 if char.islower():
-                    temp = ord(char) + self.shift
+                    temp = ord(char) + shift
                     if temp > ord('z'):
                         temp = ord('a')
                     intext += chr(temp)
                     temp = 0
                     continue
                 elif char.isupper():
-                    temp = ord(char) + self.shift
+                    temp = ord(char) + shift
                     if temp > ord('Z'):
                         temp = ord('A')
                     intext += chr(temp)
@@ -38,21 +40,23 @@ class cipher:
             raise TypeError("Inputed text must be a string!")
         if shift < 1 or shift > 25:
             raise ValueError("Shift must be between 1 and 25 to correctly work!")
-        
+        self.text = text
+        self.shift = shift
+
         intext = ''
         temp = 0
 
         for char in text:
             if char.isalnum():
                 if char.islower():
-                    temp = ord(char) - self.shift
+                    temp = ord(char) - shift
                     if temp < ord('a'):
                         temp = ord('z')
                     intext += chr(temp)
                     temp = 0
                     continue
                 elif char.isupper():
-                    temp = ord(char) - self.shift
+                    temp = ord(char) - shift
                     if temp < ord('A'):
                         temp = ord('Z')
                     intext += chr(temp)
