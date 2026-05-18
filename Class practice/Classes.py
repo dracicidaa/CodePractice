@@ -97,3 +97,18 @@ while running:
             print("Error, please enter an integer between 1 and 25. Restarting program")
             continue
         print('Here is your output: ', ceaser.encode(inptext, inpshift))
+    if status == 2:
+        try:
+            inptext = input('Please enter a string of text to dencode: ')
+        except Exception:
+            print("Error, please enter in a string of characters. Restarting program")
+            continue
+        try:
+            inpshift = int(input('Please enter a number (1 - 25) that you would like as a shift: '))
+        except Exception:
+            print("Error, please enter an integer between 1 and 25. Restarting program")
+            continue
+        print('Here is your output: ', ceaser.dencode(inptext, inpshift))
+    if status == -1:
+        print('Thanks for running the program, have a nice day!')
+        running = False
