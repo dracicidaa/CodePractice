@@ -108,7 +108,7 @@ while running:
         except Exception:
             print("Error, please enter an integer between 1 and 25. Restarting program")
             continue
-        print('Here is your output: ', ceaser.dencode(inptext, inpshift))
+        print('Here is your output: ', ceaser.decode(inptext, inpshift))
     if status == -1:
         print('Thanks for running the program, have a nice day!')
         running = False
