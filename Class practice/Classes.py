@@ -16,14 +16,14 @@ class cipher:
                 if char.islower():
                     temp = ord(char) + shift
                     if temp > ord('z'):
-                        temp = ord('a')
+                        temp = ord('a') + (shift - 1)
                     intext += chr(temp)
                     temp = 0
                     continue
                 elif char.isupper():
                     temp = ord(char) + shift
                     if temp > ord('Z'):
-                        temp = ord('A')
+                        temp = ord('A') + (shift - 1)
                     intext += chr(temp)
                     temp = 0
                     continue
@@ -51,14 +51,14 @@ class cipher:
                 if char.islower():
                     temp = ord(char) - shift
                     if temp < ord('a'):
-                        temp = ord('z')
+                        temp = ord('z') - (shift - 1)
                     intext += chr(temp)
                     temp = 0
                     continue
                 elif char.isupper():
                     temp = ord(char) - shift
                     if temp < ord('A'):
-                        temp = ord('Z')
+                        temp = ord('Z') - (shift - 1)
                     intext += chr(temp)
                     temp = 0
                     continue
