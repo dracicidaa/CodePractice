@@ -44,7 +44,7 @@ class cipher:
 
         for char in text:
             if char.isalnum():
-               if char.islower():
+                if char.islower():
                     temp = ord(char) - self.shift
                     if temp < ord('a'):
                         temp = ord('z')
