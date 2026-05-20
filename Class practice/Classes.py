@@ -14,16 +14,16 @@ class cipher:
         for char in text:
             if char.isalnum():
                 if char.islower():
-                    temp = ord(char) + shift
-                    if temp > ord('z'):
-                        temp = ord('a') + (shift - 1)
+                    temp = ord(char) - ord('a') #gets this to a 0-25 number
+                    temp = (temp + shift) % 26
+                    temp += ord('a')
                     intext += chr(temp)
                     temp = 0
                     continue
                 elif char.isupper():
-                    temp = ord(char) + shift
-                    if temp > ord('Z'):
-                        temp = ord('A') + (shift - 1)
+                    temp = ord(char) - ord('A') #gets this to a 0-25 number
+                    temp = (temp + shift) % 26
+                    temp += ord('A')
                     intext += chr(temp)
                     temp = 0
                     continue
@@ -49,16 +49,16 @@ class cipher:
         for char in text:
             if char.isalnum():
                 if char.islower():
-                    temp = ord(char) - shift
-                    if temp < ord('a'):
-                        temp = ord('z') - (shift - 1)
+                    temp = ord(char) - ord('a') #gets this to a 0-25 number
+                    temp = (temp - shift) % 26
+                    temp += ord('a')
                     intext += chr(temp)
                     temp = 0
                     continue
                 elif char.isupper():
-                    temp = ord(char) - shift
-                    if temp < ord('A'):
-                        temp = ord('Z') - (shift - 1)
+                    temp = ord(char) - ord('A') #gets this to a 0-25 number
+                    temp = (temp - shift) % 26
+                    temp += ord('A')
                     intext += chr(temp)
                     temp = 0
                     continue
