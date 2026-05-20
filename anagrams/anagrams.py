@@ -2,14 +2,23 @@
 inpgram1 = input('Please input the first word in the anagram to check> ')
 inpgram2 = input('Please input the second word in the anagram to check> ')
 counter = 0
-
+gramlist1 = []
+gramlist2 = []
 for i in inpgram1:
-    for j in inpgram2:
+    if i.isalnum():
+        gramlist1 += i.upper()
+
+for i in inpgram2:
+    if i.isalnum():
+        gramlist2 += i.upper()
+
+for i in gramlist1:
+    for j in gramlist2:
         if i == j:
             counter += 1
             break
 
-if counter == len(inpgram1):
+if counter == len(gramlist1):
     print('This is an anagram')
 else:
     print('this is not an anagram.')
