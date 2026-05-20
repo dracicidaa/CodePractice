@@ -17,6 +17,8 @@ for i in gramlist1:
         if i == j:
             counter += 1
             break
+print(gramlist1)
+print(gramlist2)
 
 if counter == len(gramlist1):
     print('This is an anagram')
