@@ -4,6 +4,6 @@
 
 lifeDigits = sum(int(char) for char in input('Pleas input your birthday here using only numbers (04/28/2000 instead of april 28 2000)> ') if char.isalnum())
 
-lifeDigits = sum(lifeDigits)
+lifeDigits = sum(int(num) for num in str(lifeDigits))
 
 print('Your life digit is: ', lifeDigits)
