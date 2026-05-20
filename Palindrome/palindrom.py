@@ -6,19 +6,20 @@
 #take all characters in a provided text
 #determine where the halfway point of a sentance is, check one half of the sentance against the other
 
-sentlist = []
-sentlistBogaloo = []
+sentnumb = 0
+senttotal = 0
 sentance = input('Please enter a potential palindrom here> ')
+senlen = len(sentance)
 
-for char in sentance:
-    sentlist += char
-#This got everything into a list
-halfid = ((len(sentlist) + 1) // 2) - 1 #This will check for what the half way point is, to the nearest whole number, accounting for the fact that my mental math starts from one, any python starts at 0
+for i in range(len(sentance)):
+    if i == senlen:
+        break
+    if sentance(i) == sentance(senlen):
+        senttotal += 1
+    senlen -= senlen
 
-sentlistBogaloo = sentlist[halfid::-1]
-del sentlist[(halfid + 1):]
-
-if sentlistBogaloo == sentlist:
-    print('This is a palindrome')
+if senttotal == (senlen // 2):
+    print('This is a palindrom.')
 else:
     print('This is not a palindrome.')
+
