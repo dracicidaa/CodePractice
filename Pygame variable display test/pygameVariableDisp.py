@@ -26,7 +26,7 @@ running = True
 
 while running:
     for event in pygame.event.get():
-        if event == pygame.QUIT:
+        if event.type == pygame.QUIT:
             running = False
         elif event.type == pygame.VIDEORESIZE:
             #exclusively for windowed applications, can safely be ignored
