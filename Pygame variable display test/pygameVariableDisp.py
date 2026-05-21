@@ -6,6 +6,7 @@
 #importations
 import sys, pygame
 
+clock = pygame.time.Clock()
 pygame.init()
 
 #setting internal resolution and the internal screen surface
