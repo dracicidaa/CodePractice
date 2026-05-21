@@ -24,7 +24,7 @@ screen = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE
 running = True
 
 while running:
-    for events in pygame.event.get():
+    for event in pygame.event.get():
         if event == pygame.QUIT:
             running = False
         elif event.type == pygame.VIDOERESIZE:
