@@ -17,3 +17,7 @@ window_width = 640
 window_height = 480
 
 #Can put whatever else is needed for the program
+
+#initialize variables
+running = True
+
