@@ -17,7 +17,7 @@ int_canvas = pygame.Surface((int_width, int_height))
 #setting initial window size, can be ignored when drawing full screen
 window_width = 640
 window_height = 480
-screen = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE)
+screen = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE | pygame.SCALED)
 
 #Can put whatever else is needed for the program
 
@@ -27,8 +27,6 @@ running = True
 while running:
     for event in pygame.event.get():
         if event == pygame.QUIT:
-            pygame.quit()
-            sys.quit()
             running = False
         elif event.type == pygame.VIDEORESIZE:
             #exclusively for windowed applications, can safely be ignored
@@ -50,5 +48,6 @@ while running:
         pygame.display.flip()
         clock.tick(60)
 
-
+pygame.quit()
+sys.quit()
 
