@@ -5,3 +5,15 @@
 
 #importations
 import sys, pygame
+
+pygame.init()
+
+#setting internal resolution
+int_width = 1920
+int_height = 1080
+
+#setting initial window size, can be ignored when drawing full screen
+window_width = 640
+window_height = 480
+
+#Can put whatever else is needed for the program
