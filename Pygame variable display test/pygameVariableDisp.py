@@ -27,7 +27,7 @@ while running:
     for event in pygame.event.get():
         if event == pygame.QUIT:
             running = False
-        elif event.type == pygame.VIDOERESIZE:
+        elif event.type == pygame.VIDEORESIZE:
             #exclusively for windowed applications, can safely be ignored
             window_width, window_height = event.w, event.h
             screen = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE)
